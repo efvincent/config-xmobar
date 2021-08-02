@@ -35,8 +35,11 @@ Config {
    --   The --template option controls how the plugin is displayed. Text
    --   color can be set by enclosing in <fc></fc> tags. For more details
    --   see http://projects.haskell.org/xmobar/#system-monitor-plugins.
+   
    , commands = 
-        [ Run Weather "KGSO" [ "--template", "<skyCondition> <fc=#4682B4><tempF></fc>F <fc=#4682B4><rh></fc>"
+        -- greensboro: KGSO
+        -- Manhattan: KZYP (Penn Station) KNYC (New York Area)
+        [ Run Weather "KZYP" [ "--template", "<skyCondition> <fc=#4682B4><tempF></fc>F <fc=#4682B4><rh></fc>"
                              ] 3600
 
         , Run Wireless ""    [ "-t", "<fc=white><essid></fc> <quality>"
