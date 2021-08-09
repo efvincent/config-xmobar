@@ -39,7 +39,7 @@ Config {
    , commands = 
         -- greensboro: KGSO
         -- Manhattan: KZYP (Penn Station) KNYC (New York Area)
-        [ Run Weather "KZYP" [ "--template", "<skyCondition> <fc=#4682B4><tempF></fc>F <fc=#4682B4><rh></fc>"
+        [ Run Weather "KGSO" [ "--template", "<skyCondition> <fc=#4682B4><tempF></fc>F <fc=#4682B4><rh></fc>"
                              ] 3600
 
         , Run Wireless ""    [ "-t", "<fc=white><essid></fc> <quality>"
